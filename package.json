@@ -1,10 +1,13 @@
-{
+  {
   "name": "cypress-do-zero-a-nuvem",
   "version": "1.0.0",
   "description": "Curso 'Cypress, do Zero à Nuvem' da Escola Talking About Testing.",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:open:mobile": "cypress open --config viewportWidth=410,viewportHeight=860",
+    "test:mobile": "cypress run --config viewportWidth=410,viewportHeight=860",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
